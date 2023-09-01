@@ -2,7 +2,13 @@
 
 export default function handler(req, res) {
 
-    let {commentAnnotation,targetComment,actionType} = req.body
+    let commentAnnotation = ""
+
+    let targetComment= ""
+
+    let actionType = ""
+
+    console.log(req.body)
     res.status(200).send(`Processing: commentAnnotation: ${commentAnnotation}, commentType: ${targetComment}, actionType ${actionType}`)
   }
   
